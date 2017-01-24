@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <a class="icon icon-left-nav pull-left"></a>
+        <button class="btn btn-link btn-nav pull-right">
+            Sign Out  
+        </button>
+        
+      <h1 class="title">UMB</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+     
+        <ul class="table-view">
+  <li class="table-view-cell media" style="background-color:#bababa;color:white;border-radius: 25px;text-align:center;">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="img/dollars.png" style="background-color:#FAFAD2;border-radius: 15px">
+      <div class="media-body">
+        Price Comparison
+       
+      </div>
+    </a>
+  </li>
+        </ul>
+        <ul class="table-view">
+  <li class="table-view-cell media" style="background-color:#bababa;color:white;border-radius: 25px; text-align:center;">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="img/graphIcon.png" style="background-color:orange;border-radius: 15px">
+      <div class="media-body">
+        Quick View
+ 
+      </div>
+    </a>
+  </li>
+        </ul>
+        <ul class="table-view">
+  <li class="table-view-cell media" style="background-color:#bababa;color:white;border-radius: 25px; text-align:center;">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="img/notebook.png" style="background-color:#87CEFA;border-radius: 15px">
+      <div class="media-body">
+        Expenses
+       
+      </div>
+    </a>
+  </li>
+        </ul>
+        <ul class="table-view">
+<li class="table-view-cell media" style="background-color:#bababa;color:white;border-radius: 25px;text-align:center;">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="img/tax-50.png" style="background-color:green;border-radius: 15px">
+      <div class="media-body">
+        Tax Information
+       
+      </div>
+    </a>
+  </li>
+</ul>
+        
+        
+    <!--Place bottom nav bar on every page-->
+    <nav class="bar bar-tab">
+    <a class="tab-item" href="#">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">PROFILE</span>
+          </a>
+    <a class="tab-item" href="#">
+        <span class="icon icon-compose"></span>
+        <span class="tab-label">MESSAGES</span>
+    </a>
+    <a class="tab-item" href="#">
+        <span class="icon icon-share"></span>
+        <span class="tab-label">SCAN RECIPT</span>
+    </a>
+ 
+    <a class="tab-item active" href="#">
+        <span class="icon icon-more"></span>
+        <span class="tab-label">MORE</span>
+    </a>
+    </nav>
+        
+   </div>
+
+  </body>
+</html>
