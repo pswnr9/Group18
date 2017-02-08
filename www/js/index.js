@@ -20,6 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        //client = new WindowsAzure.MobileServiceClient('http://pockethsamanager.azurewebsites.net-fail');
     },
 
     // deviceready Event Handler
