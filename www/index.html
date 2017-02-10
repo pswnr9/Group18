@@ -2,96 +2,100 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ratchet template page</title>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://pockethsamanager.azurewebsites.net/; style-src 'self'; media-src *">
+    <title>DASHBOARD</title>
 
-    <!-- Sets initial viewport load and disables zooming  -->
+   
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
-    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <!-- Include the compiled Ratchet CSS -->
-    <link href="css/ratchet.css" rel="stylesheet">
-
-    <!-- Include the compiled Ratchet JS -->
+ 
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Open+Sans+Condensed:300" rel="stylesheet">
     <script src="js/ratchet.js"></script>
   </head>
   <body>
-
+    <div style="height:100px;width:100%;border:1px solid;">
+    </div>
     <!-- Make sure all your bars are the first things in your <body> -->
-    <header class="bar bar-nav">
-        <a class="icon icon-left-nav pull-left"></a>
-        <button class="btn btn-link btn-nav pull-right">
-            Sign Out  
-        </button>
-        
-      <h1 class="title">UMB</h1>
-    </header>
+    <header class=" bar bar-nav">
+<!--
+        <a onclick="window.history.back();"
+           class="icon icon-left-nav pull-left"></a>
+-->
+
+        <h1 class="title">UMB</h1>
+      </header>
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
      
-        <ul class="table-view">
-  <li class="table-view-cell media" style="background-color:#bababa;color:white;border-radius: 25px;text-align:center;">
-    <a class="navigate-right">
-      <img class="media-object pull-left" src="img/dollars.png" style="background-color:#FAFAD2;border-radius: 15px">
-      <div class="media-body">
-        Price Comparison
-       
-      </div>
-    </a>
-  </li>
+        <ul class="dashboard_table-view">
+             <img class="dashboard_image_1 media-object pull-left" src="img/dollars.png" >
+            <li class="dashboard table-view-cell media" >
+                <a class="navigate-right">
+                   
+                <div class="media-body">
+                Price Comparison
+                 
+                </div>
+                    
+                </a>
+            </li>
         </ul>
-        <ul class="table-view">
-  <li class="table-view-cell media" style="background-color:#bababa;color:white;border-radius: 25px; text-align:center;">
-    <a class="navigate-right">
-      <img class="media-object pull-left" src="img/graphIcon.png" style="background-color:orange;border-radius: 15px">
-      <div class="media-body">
-        Quick View
- 
-      </div>
-    </a>
-  </li>
+        
+        <ul class="dashboard_table-view">
+            <img class="dashboard_image_2 media-object pull-left" src="img/graphIcon.png">
+            <li class="dashboard table-view-cell media" >
+                <a class="navigate-right">
+                    
+                <div class="media-body">
+                Quick View
+                </div>
+                </a>
+            </li>
         </ul>
-        <ul class="table-view">
-  <li class="table-view-cell media" style="background-color:#bababa;color:white;border-radius: 25px; text-align:center;">
-    <a class="navigate-right">
-      <img class="media-object pull-left" src="img/notebook.png" style="background-color:#87CEFA;border-radius: 15px">
-      <div class="media-body">
-        Expenses
-       
-      </div>
-    </a>
-  </li>
+        
+        <ul class="dashboard_table-view">
+            <img class="dashboard_image_3 media-object pull-left" src="img/notebook.png">
+            <li class="dashboard table-view-cell media" >
+                <a class="navigate-right">
+                    
+                <div class="media-body">
+                Expenses  
+                </div>
+                </a>
+            </li>
         </ul>
-        <ul class="table-view">
-<li class="table-view-cell media" style="background-color:#bababa;color:white;border-radius: 25px;text-align:center;">
-    <a class="navigate-right">
-      <img class="media-object pull-left" src="img/tax-50.png" style="background-color:green;border-radius: 15px">
-      <div class="media-body">
-        Tax Information
-       
-      </div>
-    </a>
-  </li>
-</ul>
+        
+        <ul class="dashboard_table-view">
+            <img class="dashboard_image_4 media-object pull-left" src="img/tax-50.png">
+            <li class="dashboard table-view-cell media" >
+                <a class="navigate-right">
+                    
+                    <div class="media-body">
+                        Tax Information
+                    </div>
+                </a>
+            </li>
+        </ul>
         
         
     <!--Place bottom nav bar on every page-->
     <nav class="bar bar-tab">
-    <a class="tab-item" href="#">
+    <a class="tab-item" onclick="location.href = 'views/profile.html';">
         <span class="icon icon-person"></span>
         <span class="tab-label">PROFILE</span>
           </a>
-    <a class="tab-item" href="#">
+    <a class="tab-item" onclick="location.href = 'views/messages.html';">
         <span class="icon icon-compose"></span>
         <span class="tab-label">MESSAGES</span>
     </a>
-    <a class="tab-item" href="#">
+    <a class="tab-item" onclick="location.href = 'views/receiptScan.html';">
         <span class="icon icon-share"></span>
-        <span class="tab-label">SCAN RECIPT</span>
+        <span class="tab-label">SCAN RECEIPT</span>
     </a>
  
     <a class="tab-item active" href="#">
