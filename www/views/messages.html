@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Messages</title>
+
+   
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+   
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+   
+    <link href="../css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="../js/ratchet.js"></script>
+      
+ 
+      
+      
+  </head>
+  <body>
+    <div style="height:100px;width:100%;border:1px solid;">
+    </div>
+    <!-- Make sure all your bars are the first things in your <body> -->
+   <header class="bar bar-nav">
+        <a onclick="window.history.back();"
+           class="icon icon-left-nav pull-left"></a> 
+      <h1 class="title">UMB</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <div class="messages">
+            <ul class="table-view">
+                <li class="table-view-cell">
+                    <a class="navigate-right"   href="../two.html" data-transition="slide-in">
+                        <img class="media-object pull-left" src="../img/unread_mail.png" style="max-height:24px;max-width:24px;margin-top:5%">
+                    <div class="media-body">
+                    UMB
+                        <p>Reimbursement Request Recieved</p>
+                    <small>11/15/2016</small>
+                     </div>
+                    </a>
+            </li>
+            </ul>
+        </div>
+        <div class="messages">
+            <ul class="table-view">
+                <li class="table-view-cell">
+                    <a class="navigate-right"   href="../two.html" data-transition="slide-in">
+                       <img class="media-object pull-left" src="../img/unread_mail.png" style="max-height:24px;max-width:24px;margin-top:5%">
+                        <div class="media-body">
+                      UMB
+                            <p>Reimbursement Request Approved</p>
+                            <small>11/14/2016</small>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="messages">
+            <ul class="table-view">
+                <li class="table-view-cell">
+                    <a class="navigate-right"   href="../two.html" data-transition="slide-in">
+                        <!--Once the Message is open replace img with div-->
+                       <div class="media-object pull-left noMessages">
+                        </div>
+                        <div class="media-body">
+                        UMB
+                    <p>New HSA Account Created</p>
+                    <small>11/10/2016</small>
+                        </div>
+                    </a>
+            </li>
+            </ul>
+        </div>
+         <div class="messages">
+            <ul class="table-view">
+                <li class="table-view-cell">
+                    <a class="navigate-right"   href="../two.html" data-transition="slide-in">
+                        <div class="media-object pull-left noMessages">
+                        </div>
+                        <div class="media-body">
+                        UMB
+                    <p>New HSA Account Created</p>
+                    <small>11/10/2016</small>
+                        </div>
+                    </a>
+            </li>
+            </ul>
+        </div>
+        
+        
+        
+        
+    <!--Place bottom nav bar on every page-->
+     <nav class="bar bar-tab">
+    <a class="tab-item" onclick="location.href = 'profile.html';">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">PROFILE</span>
+          </a>
+    <a class="tab-item active" href="#">
+        <span class="icon icon-compose"></span>
+        <span class="tab-label">MESSAGES</span>
+    </a>
+    <a class="tab-item" onclick="location.href = 'receiptScan.html';">
+        <span class="icon icon-share"></span>
+        <span class="tab-label">SCAN RECEIPT</span>
+    </a>
+ 
+    <a class="tab-item" onclick="location.href = '../index.html';">
+        <span class="icon icon-more"></span>
+        <span class="tab-label">MORE</span>
+    </a>
+    </nav>
+        
+   </div>
+
+  </body>
+</html>
