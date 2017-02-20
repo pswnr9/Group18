@@ -24,7 +24,7 @@
     <header class="bar bar-nav">
         <a onclick="window.history.back();"
            class="icon icon-left-nav pull-left"></a>
-        <button onclick="location.href = 'page2.html';" class="btn btn-link btn-nav pull-right">
+        <button onclick="location.href = 'login.html';" class="btn btn-link btn-nav pull-right">
             Sign Out  
         </button>
         
@@ -34,8 +34,28 @@
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
-    <p>--profile--</p>
         
+    <br>
+    <p class="profile2">USERNAME: <span>umbuser12345</span></p>
+    
+   
+        <div class="messages">
+            <ul class="table-view">
+                <li class="table-view-cell">
+                    <a class="navigate-right"   onclick="location.href = 'receiptVault.html';" data-transition="slide-in">
+                        <img class="media-object pull-left" src="../img/profile.png" style="max-height:40px;max-width:40px;margin-top:5%">
+                    <div class="media-body">
+                    UMB
+                        <p>Bal <span class="icon icon-right-nav pull-right"></span></p>
+                    <small>3,110.67</small>
+                     </div>
+                        
+                    </a>
+            </li>
+            </ul>
+        </div>
+        <br>
+        <p class="profile2" style="text-align:center;">Count on More ®</p>
         
     <!--Place bottom nav bar on every page-->
      <nav class="bar bar-tab">

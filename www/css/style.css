@@ -768,8 +768,8 @@ font-family:Arial, Helvetica, sans-serif;
   margin-top: -1px;
   margin-left: 0;
   font-weight: 500;
-  color: #999;
-  background-color: #fafafa;
+  color: white;
+  background-color: #bababa;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
@@ -1529,7 +1529,77 @@ select {
     font-weight:bold;
 }
 .receipt-block {
-  background-color: #87CEFA;
-  border-top:2px solid #778899;
+    background-color: #87CEFA;
+    border-top:2px solid #778899;
     border-bottom:2px solid #778899;
+}
+.profile{
+    font-size: 15pt;
+   
+    font-weight: bold;
+    color:#333333;
+}
+.profile2{
+    font-size: 10pt;
+    color: #333333;
+    padding-left:10px;
+    
+}
+.profile3{
+   
+    background-color: #808080;
+    font-weight:bold;
+    font-size: 10pt;
+    border:2px solid #333333;
+}
+.balance{
+    font-size: 10pt;
+    padding-right:10px;
+    color: #333333;
+   
+}
+.expenses{
+    padding-left:10px;
+    font-size: 10pt;
+    color: #333333;
+   
+}
+.month{
+    text-align:center;
+    background-color:  #666666;
+    height:30px;
+    width:25%;
+    margin-left:38%;
+    border-radius: 20px;
+   
+    
+}
+.month2{
+    color:white;
+    font-size:20pt;
+    padding-top:3px;
+}
+.loginForm{
+    padding-top:5%;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+    color:black;
+    font-weight:bold;
+    font-size: 15pt;
+}
+.login{
+    color:white;
+    text-align:center;
+    margin-top:30%;
+    background-color:darkblue;
+    opacity:0.5;
+    margin-right:10px;
+    margin-left:10px;
+    border-radius:10px;
+}
+.loginBtn{
+    background-color:blue;
+    color:white;
+    opacity:0.7;
 }
