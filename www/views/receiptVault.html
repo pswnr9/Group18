@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Receipt Vault</title>title>
+
+   
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+   
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+   
+    <link href="../css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="../js/ratchet.js"></script>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+  
+    
+function drawChart() {
+      // Define the chart to be drawn.
+      var data = google.visualization.arrayToDataTable([
+        ['Genre', 'Jan', 'Feb', 'March', 'April',
+         'May', 'June','July','Aug','Sep','Oct','Nov','Dec', { role: 'annotation' }],
+        ['2016', 10, 24, 20, 32, 18, 5, 5, 5, 5, 5, 5, 5, ''],
+          
+        
+      ]);
+
+      var options = {
+    
+        height: 50,
+        legend: { position: 'top', maxLines: 3 },
+        bar: { groupWidth: '100%' },
+        isStacked: true,
+          colorAxis: {colors: ['yellow', 'lightblue']}
+      };
+
+
+      // Instantiate and draw the chart.
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+    
+ 
+    
+</script>
+  </head>
+  <body>
+    <div style="height:100px;width:100%;border:1px solid;">
+    </div>
+    <!-- Make sure all your bars are the first things in your <body> -->
+   <header class="bar bar-nav">
+        <a onclick="window.history.back();"
+           class="icon icon-left-nav pull-left"></a> 
+      <h1 class="title">UMB</h1>
+       <button onclick="location.href = 'login.html';" class="btn btn-link btn-nav pull-right">
+            Sign Out  
+        </button>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        
+          <div id="chart_div" style="width:100%;"></div>
+        <br>
+        <p class="expenses">Expenses: <span> $405.57</span>
+            <span class="pull-right balance">Balance: <span> $3,405.57</span></span></p>
+        <div class="card">
+            <ul class="table-view">
+                
+                <li class="table-view-cell table-view-divider">Today</li>
+                
+                <li class="table-view-cell">Withdrawal
+                    <p>11/15/2015 <span class="pull-right">$72.98</span></p></li>
+                 <li class="table-view-cell">Withdrawal
+                <p>11/15/2015<span class="pull-right">$52.98</span></p></li>
+                <li class="table-view-cell table-view-divider">Yesterday</li>
+                 <li class="table-view-cell">Withdrawal
+                <p>11/14/2015<span class="pull-right">$52.98</span></p></li>
+                 <li class="table-view-cell">Withdrawal
+                <p>11/14/2015<span class="pull-right">$52.98</span></p></li>
+                <li class="table-view-cell table-view-divider">Last Week</li>
+                 <li class="table-view-cell">Withdrawal
+                <p>11/7/2015<span class="pull-right">$52.98</span></p></li>
+                 <li class="table-view-cell">Withdrawal
+                <p>11/4/2015<span class="pull-right">$52.98</span></p></li>
+              
+                 <li class="table-view-cell">Withdrawal
+                <p>11/4/2015<span class="pull-right">$52.98</span></p></li>
+                 <li class="table-view-cell">Withdrawal
+                <p>11/2/2015<span class="pull-right">$52.98</span></p></li>
+            </ul>
+        </div>
+        
+     
+    <!--Place bottom nav bar on every page-->
+     <nav class="bar bar-tab">
+    <a class="tab-item active" onclick="location.href = 'profile.html';">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">PROFILE</span>
+          </a>
+    <a class="tab-item" onclick="location.href = 'messages.html';">
+        <span class="icon icon-compose"></span>
+        <span class="tab-label">MESSAGES</span>
+    </a>
+    <a class="tab-item" onclick="location.href = 'receiptScan.html';">
+        <span class="icon icon-share"></span>
+        <span class="tab-label">SCAN RECEIPT</span>
+    </a>
+ 
+    <a class="tab-item" onclick="location.href = '../index.html';">
+        <span class="icon icon-more"></span>
+        <span class="tab-label">MORE</span>
+    </a>
+    </nav>
+        
+   </div>
+
+  </body>
+</html>
