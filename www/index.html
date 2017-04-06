@@ -15,6 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Open+Sans+Condensed:300" rel="stylesheet">
     <script src="js/ratchet.js"></script>
+    <script src="js/aJaxCalls.js"></script>
   </head>
   <body>
     <div style="height:100px;width:100%;border:1px solid;">
@@ -61,10 +62,12 @@
         <ul class="dashboard_table-view">
             <img class="dashboard_image_3 media-object pull-left" src="img/notebook.png">
             <li class="dashboard table-view-cell media" >
-                <a class="navigate-right">
+                <a 
+                   onclick="location.href = 'views/expenses.html';"
+                   class="navigate-right">
                     
                 <div class="media-body">
-                Expenses  
+                Eligible Expenses  
                 </div>
                 </a>
             </li>

@@ -282,10 +282,12 @@ a:active {
 
 .bar-nav ~ .content {
   padding-top: 80px;
+ 
 }
 
 .bar-header-secondary ~ .content {
   padding-top: 88px;
+  
 }
 
 .bar-footer ~ .content {
@@ -508,6 +510,7 @@ input[type="button"] {
 
 .bar-header-secondary {
   top: 44px;
+
 }
 
 .bar-footer {
@@ -531,6 +534,7 @@ input[type="button"] {
 
 .bar-nav {
   top: 20px;
+
 }
 
 .title {
@@ -1697,3 +1701,9 @@ select {
       #target {
         width: 345px;
       }
+
+.month-header{
+    font-size:25px;
+    color: black;
+    
+}
