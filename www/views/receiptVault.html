@@ -16,6 +16,11 @@
       <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Open+Sans+Condensed:300" rel="stylesheet">
     <script src="../js/ratchet.js"></script>
      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+      <script src="../js/aJaxCalls.js"></script>
+     
+      
 <script type="text/javascript">
     google.charts.load('current', {packages: ['corechart']});
     google.charts.setOnLoadCallback(drawChart);
@@ -50,7 +55,7 @@ function drawChart() {
     
 </script>
   </head>
-  <body>
+  <body onLoad=" testAjax();">
     <div style="height:100px;width:100%;border:1px solid;">
     </div>
     <!-- Make sure all your bars are the first things in your <body> -->
@@ -73,6 +78,8 @@ function drawChart() {
         <div class="card">
             <ul class="table-view">
                 
+                
+<!--
                 <li class="table-view-cell table-view-divider">Today</li>
                 
                 <li class="table-view-cell">Withdrawal
@@ -94,6 +101,7 @@ function drawChart() {
                 <p>11/4/2015<span class="pull-right">$52.98</span></p></li>
                  <li class="table-view-cell">Withdrawal
                 <p>11/2/2015<span class="pull-right">$52.98</span></p></li>
+-->
             </ul>
         </div>
         
