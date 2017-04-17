@@ -12,45 +12,65 @@
     <link href="../css/style.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Open+Sans+Condensed:300" rel="stylesheet">
     <script src="../js/ratchet.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/authentication.js"></script>
 <script>
-    document
-.querySelector('#mySlider')
-.addEventListener('slide', myFunction)</script>
+    // document
+// .querySelector('#mySlider')
+// .addEventListener('slide', myFunction)</script>
 <style>
     body{
-        background-image: url("../img/blue.jpg");
-       
+        /*background-image: url("../img/blue.jpg");*/
+        background-image: url("http://pre01.deviantart.net/8a7d/th/pre/i/2012/035/e/3/blue_tarp_by_laundromat1970-d4op33i.jpg");
+       /*background: lightskyblue;*/
+    }
+
+    #loader {
+      /*display: none;*/
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 </style>
 </head>
-<body ng-app="HelloWorldApp" >
-<!--
-    <div ng-controller="HelloWorldController">
-        <h1> Hello {{who}} </h1>
-    </div>
--->
-
-<!--
-    <div ng-controller="Cntrl">
-   
-        <button ng-click="changeView(mail)" >
-            Page 3
-        </button>
-    </div>
--->
+<body>
+    <div id="loader" style="display: none;"></div>
+    <div id="container">
     <div class="login">
         <h1 style="font-size:100pt">UMB</h1>
         <h3>Healthcare Savings Account</h3>
     </div>
     
-        <form class="loginForm">
-            <input type="text" placeholder="Username">
-            <input type="text" placeholder="Password">
+        <form class="loginForm" action="javascript:login();">
+            <input id="uid" type="text" placeholder="Username">
+            <input id="pw" type="Password" placeholder="Password">
             <button class="btn btn-block loginBtn">SIGN IN</button>
             <p style="">or</p>
             <a>Contact</a>
         </form>
 
-   
+    </div>   
   </body>
 </html>
