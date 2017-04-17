@@ -282,6 +282,8 @@ a:active {
 
 .bar-nav ~ .content {
   padding-top: 80px;
+/*background color*/ 
+
  
 }
 
@@ -496,8 +498,9 @@ input[type="button"] {
   position: fixed;
   right: 0;
   left: 0;
+    padding-top:20px;
   z-index: 10;
-  height: 55px;
+  height: 75px;
   padding-right: 10px;
   padding-left: 10px;
   background-color: lightblue;
@@ -533,7 +536,8 @@ input[type="button"] {
 }
 
 .bar-nav {
-  top: 20px;
+  top: 0px;
+
 
 }
 
@@ -1447,8 +1451,9 @@ select {
   content: '\e822';
 }
 
-
+/*********************/
 /*Piper's Style Sheet*/
+/*********************/
  .noMessages{
         min-height:24px;
         min-width:24px;

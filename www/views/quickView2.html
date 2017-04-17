@@ -20,10 +20,12 @@
       <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
       <script src="../js/aJaxCalls.js"></script>
       <script src="../js/googleAPI.js"></script>
+      <script src="../js/monthlyGoogleAPI.js"></script>
+      <script src="../js/expense_balance.js"></script>
      
 
   </head>
-  <body onLoad="testAjax(); drawChart();">
+  <body onLoad="expenses(); drawChart(); drawChart2();">
     <div style="height:100px;width:100%;border:1px solid;">
     </div>
     <!-- Make sure all your bars are the first things in your <body> -->
@@ -42,36 +44,21 @@
           <div id="chart_div" style="width:100%;"></div>
         <br>
         <p class="expenses"></span>
+      
             <span class="pull-right balance">Balance: <span> $3,405.57</span></span></p>
+    
+        <div class="month">
+            <p Class="month2"></p>
+        </div>
+        <br>
         <div class="card">
             <ul class="table-view">
                 
-                
-<!--
-                <li class="table-view-cell table-view-divider">Today</li>
-                
-                <li class="table-view-cell">Withdrawal
-                    <p>11/15/2015 <span class="pull-right">$72.98</span></p></li>
-                 <li class="table-view-cell">Withdrawal
-                <p>11/15/2015<span class="pull-right">$52.98</span></p></li>
-                <li class="table-view-cell table-view-divider">Yesterday</li>
-                 <li class="table-view-cell">Withdrawal
-                <p>11/14/2015<span class="pull-right">$52.98</span></p></li>
-                 <li class="table-view-cell">Withdrawal
-                <p>11/14/2015<span class="pull-right">$52.98</span></p></li>
-                <li class="table-view-cell table-view-divider">Last Week</li>
-                 <li class="table-view-cell">Withdrawal
-                <p>11/7/2015<span class="pull-right">$52.98</span></p></li>
-                 <li class="table-view-cell">Withdrawal
-                <p>11/4/2015<span class="pull-right">$52.98</span></p></li>
-              
-                 <li class="table-view-cell">Withdrawal
-                <p>11/4/2015<span class="pull-right">$52.98</span></p></li>
-                 <li class="table-view-cell">Withdrawal
-                <p>11/2/2015<span class="pull-right">$52.98</span></p></li>
--->
+
             </ul>
         </div>
+     <div id="chart_div2" ></div>
+        <p class="none"></p>
         
      
     <!--Place bottom nav bar on every page-->

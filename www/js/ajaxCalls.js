@@ -8,6 +8,8 @@ var transactions = {};
 var first_iteration = false;
 var first_iteration_lastmonth = false;
 var first_iteration_lastyear = false;
+var sum = 0;
+
 
 function testAjax() {
     $.ajax({
@@ -66,7 +68,7 @@ function testAjax() {
                     $('ul.table-view').append("<h3 style='background-color:#E0E0E0;'>Last Month" + "<hr>" + "</h3>");
                     first_iteration_lastmonth = false;
             }
-             function do_one_time_lastyear(){
+            function do_one_time_lastyear(){
                     $('ul.table-view').append("<h3 style='background-color:#E0E0E0;'>Last Year" + "<hr>" + "</h3>");
                     first_iteration_lastyear = false;
             }
@@ -74,12 +76,30 @@ function testAjax() {
            
             //transaction append statements below the headers
            
+//                 $(tran.tran_date).val($.datepicker.formatDate('dd M yy', new Date()));
+                var formattedDate = trans_date.getDate() + "-" + (trans_date.getMonth() + 1) + "-" + trans_date.getFullYear();
             
-                    $('ul.table-view').append(tran.payment_method + "<p>"+tran.trans_date + "<span class='pull-right'>" + "$" + tran.total_amount +"</span></p>" + "<hr>");
-               
+                    $('ul.table-view').append(tran.payment_method + "<p>"+ formattedDate + "<span class='pull-right'>" + "$" + tran.total_amount +"</span></p>" + "<hr>");
+                   
+                    
+                    var val = parseFloat(tran.total_amount);
+                    sum+=val;
+                    
+                     
+                  
+                    console.log(sum);
+                    
+                    
         
             });
         
+        $('p.expenses').append("Expenses: " + sum);
+        
+        //Come back and add balnce function in
+        
+        //var nval = parseFloat(user.yearly_balance);
+        //var newBalance = nval - sum;
+//        $('p.balance').append("Balance: " + newBalance);
         
     }).fail(function(err){
         console.log(err);               //if error, log to console
@@ -87,4 +107,8 @@ function testAjax() {
     })
 
     console.log("this is a test");      //sanity check to make sure function at least executed to this line if nothing else worked...
+    
+     
+    
+    
 };
